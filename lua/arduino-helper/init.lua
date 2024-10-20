@@ -99,7 +99,7 @@ function M.setup(setopts)
 	M.compile = compile(plugin_opts)
 
 	vim.api.nvim_create_augroup("arduino-helper", { clear = true })
-	vim.api.nvim_create_autocmd({ "FileType "}, {
+	vim.api.nvim_create_autocmd({ "FileType"}, {
 		group = "arduino-helper",
 		pattern = "arduino",
 		desc = "Create arduino-helper local commads when enterino .ino buffer",
